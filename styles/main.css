@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Jetbrains Mono", monospace;
+  background-color: rgb(210, 210, 210);
+}
+
+@media (max-width: 768px) {
+  .hidden-mobile {
+    display: none;
+  }
+}
+
+.app {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-wrapper {
+  padding: 0 0.75rem;
+  border-bottom: 1px solid black;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header a {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: black;
+}
+
+.header button {
+  background-color: rgb(210, 210, 210);
+}
+
+.header button:hover {
+  background-color: rgb(270, 270, 270);
+}
+
+.main-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.main {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 25%;
+  width: 100%;
+  margin-bottom: 1rem;
+  background-size: cover;
+  background-position: top;
+  background-image: url("https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80");
+}
+
+.product-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  height: auto;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.product-card h3 {
+  margin: 0;
+  padding: 0 0 1rem 0;
+}
+
+.product-card img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.cart-toggle {
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.cart-modal {
+  display: none;
+  width: 100%;
+}
+
+.cart-open .cart-modal {
+  display: initial;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  border-top: 1px solid black;
+  font-size: 0.75rem;
+}
+
+.icon-home {
+  display: block;
+  height: 2rem;
+  width: 2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('data:image/svg+xml,<%3Fxml version="1.0" encoding="UTF-8"%3F><svg xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" fill="none" stroke-width="1.5" viewBox="0 0 24 24" color="%23000000" style="--darkreader-inline-color: %23d9d7d4;" data-darkreader-inline-color=""><path stroke="%23000000" stroke-width="1.5" d="M20.485 3h-3.992l.5 5s1 1 2.5 1a3.23 3.23 0 0 0 2.139-.806.503.503 0 0 0 .15-.465L21.076 3.5A.6.6 0 0 0 20.485 3Z" style="--darkreader-inline-stroke: %23000000;" data-darkreader-inline-stroke=""></path><path stroke="%23000000" stroke-width="1.5" d="m16.493 3 .5 5s-1 1-2.5 1-2.5-1-2.5-1V3h4.5Z" style="--darkreader-inline-stroke: %23000000;" data-darkreader-inline-stroke=""></path><path stroke="%23000000" stroke-width="1.5" d="M11.993 3v5s-1 1-2.5 1-2.5-1-2.5-1l.5-5h4.5Z" style="--darkreader-inline-stroke: %23000000;" data-darkreader-inline-stroke=""></path><path stroke="%23000000" stroke-width="1.5" d="M7.493 3H3.502a.6.6 0 0 0-.592.501L2.205 7.73c-.029.172.02.349.15.465.328.29 1.061.806 2.138.806 1.5 0 2.5-1 2.5-1l.5-5Z" style="--darkreader-inline-stroke: %23000000;" data-darkreader-inline-stroke=""></path><path stroke="%23000000" stroke-width="1.5" d="M3 9v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9" style="--darkreader-inline-stroke: %23000000;" data-darkreader-inline-stroke=""></path><path stroke="%23000000" stroke-width="1.5" stroke-miterlimit="16" d="M14.833 21v-6a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v6" style="--darkreader-inline-stroke: %23000000;" data-darkreader-inline-stroke=""></path></svg>');
+}
+
+.icon-cart {
+  display: block;
+  height: 2rem;
+  width: 2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('data:image/svg+xml,<%3Fxml version="1.0" encoding="UTF-8"%3F><svg xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" fill="none" stroke-width="1.5" viewBox="0 0 24 24" color="%23000000" style="--darkreader-inline-color: %23d9d7d4;" data-darkreader-inline-color=""><path fill="%23000000" stroke="%23000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M19.5 22a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM9.5 22a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" style="--darkreader-inline-fill: %23000000; --darkreader-inline-stroke: %23000000;" data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></path><path stroke="%23000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M16.5 4H22l-2 11h-4.5m1-11-1 11m1-11h-5.75m4.75 11h-4m-.75-11H5l2 11h4.5m-.75-11 .75 11M5 4c-.167-.667-1-2-3-2M20 15H5.23c-1.784 0-2.73.781-2.73 2 0 1.219.946 2 2.73 2H19.5" style="--darkreader-inline-stroke: %23000000;" data-darkreader-inline-stroke=""></path></svg>');
+}
+
+.icon-up {
+  display: block;
+  height: 2rem;
+  width: 2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('data:image/svg+xml,<%3Fxml version="1.0" encoding="UTF-8"%3F><svg xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" fill="none" stroke-width="1.5" viewBox="0 0 24 24" color="%23000000" style="--darkreader-inline-color: %23d9d7d4;" data-darkreader-inline-color=""><path stroke="%23000000" stroke-width="1.5" d="M18 22H6a3 3 0 0 1-3-3v-2a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v2a3 3 0 0 1-3 3Z" style="--darkreader-inline-stroke: %23000000;" data-darkreader-inline-stroke=""></path><path stroke="%23000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M3 8V6a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v2M12 14V6m0 0L9 9m3-3 3 3" style="--darkreader-inline-stroke: %23000000;" data-darkreader-inline-stroke=""></path></svg>');
+}
+
+@media (min-width: 768px) {
+  .header-wrapper a {
+    font-size: 2rem;
+  }
+
+  .footer {
+    font-size: 1rem;
+  }
+
+  .icon-home {
+    height: 3rem;
+    width: 3rem;
+  }
+}
