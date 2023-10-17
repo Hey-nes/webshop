@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/main.css" />
-    <script type="text/javascript" src="./scripts/main.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="./scripts/main.js" defer></script>
     <title>Welcome to the webshop</title>
   </head>
   <body>
@@ -16,7 +16,7 @@
             <h1 class="logotype">Webshop</h1>
           </a>
 
-          <button class="cart-open">
+          <button class="cart">
             <i class="icon-cart"></i>
           </button>
         </header>
@@ -29,58 +29,88 @@
 
           <div class="card-container">
             <div class="product-card">
-              <h3></h3>
-              <a href="">
-                <img src="" alt="Product image" />
-              </a>
-              <p></p>
-              <strong></strong>
-              <span></span>
+              <h3>Lorem</h3>
+              <img
+                class="product-image"
+                src="https://source.unsplash.com/random"
+                alt="Product image"
+              >
+              <p>Ipsum</p>
+              <strong>1337$</strong>
+              <span>Dolor</span>
+              <button class="add-cart">
+                <i class="icon-cart"></i>
+              </button>
             </div>
             <div class="product-card">
-              <h3></h3>
-              <a href="">
-                <img src="" alt="Product image" />
-              </a>
-              <p></p>
-              <strong></strong>
-              <span></span>
+              <h3>Lorem</h3>
+              <img
+                class="product-image"
+                src="https://source.unsplash.com/random"
+                alt="Product image"
+              >
+              <p>Ipsum</p>
+              <strong>1337$</strong>
+              <span>Dolor</span>
+              <button class="add-cart">
+                <i class="icon-cart"></i>
+              </button>
             </div>
             <div class="product-card">
-              <h3></h3>
-              <a href="">
-                <img src="" alt="Product image" />
-              </a>
-              <p></p>
-              <strong></strong>
-              <span></span>
+              <h3>Lorem</h3>
+              <img
+                class="product-image"
+                src="https://source.unsplash.com/random"
+                alt="Product image"
+              >
+              <p>Ipsum</p>
+              <strong>1337$</strong>
+              <span>Dolor</span>
+              <button class="add-cart">
+                <i class="icon-cart"></i>
+              </button>
             </div>
             <div class="product-card">
-              <h3></h3>
-              <a href="">
-                <img src="" alt="Product image" />
-              </a>
-              <p></p>
-              <strong></strong>
-              <span></span>
+              <h3>Lorem</h3>
+              <img
+                class="product-image"
+                src="https://source.unsplash.com/random"
+                alt="Product image"
+              >
+              <p>Ipsum</p>
+              <strong>1337$</strong>
+              <span>Dolor</span>
+              <button class="add-cart">
+                <i class="icon-cart"></i>
+              </button>
             </div>
             <div class="product-card">
-              <h3></h3>
-              <a href="">
-                <img src="" alt="Product image" />
-              </a>
-              <p></p>
-              <strong></strong>
-              <span></span>
+              <h3>Lorem</h3>
+              <img
+                class="product-image"
+                src="https://source.unsplash.com/random"
+                alt="Product image"
+              >
+              <p>Ipsum</p>
+              <strong>1337$</strong>
+              <span>Dolor</span>
+              <button class="add-cart">
+                <i class="icon-cart"></i>
+              </button>
             </div>
             <div class="product-card">
-              <h3></h3>
-              <a href="">
-                <img src="" alt="Product image" />
-              </a>
-              <p></p>
-              <strong></strong>
-              <span></span>
+              <h3>Lorem</h3>
+              <img
+                class="product-image"
+                src="https://source.unsplash.com/random"
+                alt="Product image"
+              >
+              <p>Ipsum</p>
+              <strong>1337$</strong>
+              <span>Dolor</span>
+              <button class="add-cart">
+                <i class="icon-cart"></i>
+              </button>
             </div>
           </div>
         </main>
@@ -93,13 +123,21 @@
       <div class="product-modal">
         <div class="card-container">
           <div class="product-card">
-            <h3></h3>
-            <a href="">
-              <img src="" alt="Product image" />
-            </a>
-            <p></p>
-            <strong></strong>
-            <span></span>
+            <button class="product-modal-close">
+              <i class="icon-close"></i>
+            </button>
+            <h3>Lorem</h3>
+            <img
+              class="product-image"
+              src="https://source.unsplash.com/random"
+              alt="Product image"
+            >
+            <p>Ipsum</p>
+            <strong>1337$</strong>
+            <span>Dolor</span>
+            <button class="add-cart">
+              <i class="icon-cart"></i>
+            </button>
           </div>
         </div>
       </div>
@@ -114,17 +152,17 @@
         <div class="cart-content">
           <div class="table-wrapper">
             <table>
-              <tr>
-                <th>Product</th>
-                <th>Price</th>
-                <th>Total</th>
-              </tr>
-              <tr>
-                <td class="product">Name</td>
-                <td class="price">666$</td>
-                <td class="total">666$</td>
-              </tr>
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
             </table>
+          </div>
+          <div class="cart-buttons">
+            <button class="checkout">Buy</button>
           </div>
         </div>
       </div>
